@@ -1,0 +1,36 @@
+{
+  "name": "flow-react-examples",
+  "version": "1.0.0",
+  "description": "Some examples on using flow with react",
+  "scripts": {
+    "flow": "flow check",
+    "format": "prettier --single-quote --bracket-spacing=false --print-width 100 --write 'src/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote --bracket-spacing=false --print-width 100",
+      "eslint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "react": "^15.5.4"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.46.0",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.1",
+    "prettier": "^1.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwaterke/flow-react-examples.git"
+  },
+  "author": "Harold Waterkeyn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hwaterke/flow-react-examples/issues"
+  },
+  "homepage": "https://github.com/hwaterke/flow-react-examples#readme"
+}
